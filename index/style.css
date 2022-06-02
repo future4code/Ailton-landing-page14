@@ -27,9 +27,23 @@ header img {
 
 footer {
     display: flex;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(0, 0, 0);
     color: rgba(245, 245, 245, 0.788);
     padding: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.sobre a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(245, 245, 245, 0.788);
+
+    
+}
+
+.redesSociais img{
+    height: 36px ;
+    width: 36px;      
 }
