@@ -20,6 +20,23 @@ header {
     font-size: 1.5rem;
 }
 
+main {
+    display: grid;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 5px;
+}
+main section {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(px, 1fr));
+    padding: 15px;
+    justify-content: space-between;
+    min-height: 33vh;
+    border: 1px solid rgb(255,145,77);
+    margin: 10px;
+    border-radius: 10px;
+}
+
 header img {
     height: 100px;
 }
