@@ -63,4 +63,24 @@ footer {
 .redesSociais img{
     height: 36px ;
     width: 36px;      
+
+}
+
+.secao1{
+    background-image:url(./img/juventude_pixabay.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40vw;
+    height: 40vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.secao1 p{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
 }
