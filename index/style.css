@@ -13,11 +13,42 @@
 }
 
 header {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255,145,77);
     font-size: 1.5rem;
+}
+
+header img {
+    height: 100px;
+}
+
+ul {
+    text-transform: uppercase;   
+}
+li {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+li:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+img {
+    margin-left: 20px;
 }
 
 main {
@@ -36,11 +67,6 @@ main section {
     margin: 10px;
     border-radius: 10px;
 }
-
-header img {
-    height: 100px;
-}
-
 
 footer {
     display: flex;
