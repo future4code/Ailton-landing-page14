@@ -11,39 +11,38 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    width:100vw ;
+    min-width: 100vw;
 }
 
 header {
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255,145,77);
-    /* padding: 15px; */
+    background-color: rgb(255, 145, 77);
+    padding: 15px;
     font-size: 10px;
 }
-
 
 header img {
     height: 100px;
 }
 
-ul {
-    text-transform: uppercase;   
+ul a {
+    text-decoration: none;
 }
+
 li {
     display: inline;
     color: white;
     font-weight: bold;
     padding: 0 9px;
     font-size: 20px;
-    text-decoration: underline;
+
 }
 
 li:hover {
-    background-color: antiquewhite;
-    color: black;
+    color: rgb(255, 210, 86);
+
 }
 
 button {
@@ -57,15 +56,23 @@ img {
 
 header button {
     font-size: 20px;
-    font-family:"Barlow";
+    font-family: "Barlow";
     border: none;
     padding: 10px 36px;
     border-radius: 20px;
     margin: 15px;
-    background-color: rgb(255,189,89);
+    background-color: rgb(255, 189, 89);
     color: white;
 }
 
+header button:hover {
+    font-size: 24px;
+    font-family: "Barlow";
+    padding: 16px 40px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+    color:rgb(255, 145, 77);
+}
 
 
 main {
@@ -75,30 +82,38 @@ main {
     gap: 5px;
 }
 
+.secao2 div {
+    border: none;
+    justify-content: space-between;
+}
+
 main section {
     display: grid;
     padding: 15px;
     justify-content: space-between;
     min-height: 33vh;
-    border: 1px solid rgb(255,145,77);
+    border: 1px solid rgb(255, 145, 77);
     margin: 10px;
     border-radius: 10px;
-    font-family:"Barlow";
+    font-family: "Barlow";
 }
 
-/* necessario fazer manutenção para corrigir borda vazando */
+.about-us h2 {
+    display: flex;
+    margin-right: 5%;
+}
 
-main div {
-    /* display: flex; */
-    /* flex-direction: row; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     border: 1px solid black;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    font-family:"Barlow";
+    font-family: "Barlow";
 }
 
 footer {
@@ -108,36 +123,35 @@ footer {
     padding: 15px;
     align-items: center;
     justify-content: space-between;
+    min-width: 100vw;
 }
 
 .sobre a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-
-    color: rgb(245, 245, 245, 0.788);   
+    color: rgb(245, 245, 245, 0.788);
 }
 
-    color: rgb(245, 245, 245, 0.788);
-    background-color: black;
+
 
 
 .redesSociais a {
     text-decoration: none;
 }
 
-.redesSociais img{
+.redesSociais img {
 
-    height: 30px ;
-    width: 30px;    
+    height: 30px;
+    width: 30px;
 
-    height: 36px ;
-    width: 36px;      
+    height: 36px;
+    width: 36px;
 
 }
 
-.secao1{
-    background-image:url(./img/juventude_pixabay.webp);
+.secao1 {
+    background-image: url(./img/juventude_pixabay.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -147,41 +161,64 @@ footer {
     align-content: center;
 }
 
-.secao1 p{
+.secao1 p {
     font-size: x-large;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    
     color: white;
 }
 
-.secao2{
+.secao2 {
     display: flex;
     padding: 50px;
-   
+
 }
 
-.secao2 img{
+.secao2 img {
     width: 10vw;
     height: 10vw;
 }
 
 
-.cartao{
+.cartao {
     display: flex;
     align-items: center;
-  
+
 }
 
 
-.contaCorrente{
+.contaCorrente {
     display: flex;
     align-items: center;
-   
+
 }
 
 
-.suporte{
+.suporte {
     display: flex;
     align-items: center;
+}
+
+.emprestimo img{
+    width: 30vw;
+
+}
+
+.emprestimo{
+    display: flex;
+    background-color:#ffb700;
+    justify-content: space-between;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 10px;
+    font-size: larger;
+    
 }
