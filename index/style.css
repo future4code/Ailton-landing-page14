@@ -73,7 +73,7 @@ header button:hover {
     padding: 16px 40px;
     border-radius: 28px;
     background-color: whitesmoke;
-    color:rgb(255, 145, 77);
+    color: rgb(255, 145, 77);
 }
 
 
@@ -101,9 +101,6 @@ main section {
     font-family: "Barlow";
 }
 
-.about-us h2 {
-    display: flex;
-}
 
 .about-us {
     display: flex;
@@ -112,10 +109,24 @@ main section {
     justify-items: center;
     align-items: center;
     border: 1px solid black;
-    padding: 5px;
-    margin: 10px;
     border-radius: 10px;
     font-family: "Barlow";
+}
+
+#integrantes-img1 img {
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+}
+#integrantes-img2 img {
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+}
+#integrantes-img1 {
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
 }
 
 footer {
@@ -204,19 +215,19 @@ footer {
     align-items: center;
 }
 
-.emprestimo img{
+.emprestimo img {
     width: 30vw;
 
 }
 
-.emprestimo{
+.emprestimo {
     display: flex;
-    background-color:#ffb700;
+    background-color: #ffb700;
     justify-content: space-between;
   
 }
 
-.textos{
+.textos {
     display: flex;
     flex-direction: column;
     align-items: center;
