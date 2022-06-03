@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inconsolata:wght@500&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    width: 100%;
+    
 }
 
 header {
@@ -17,8 +19,21 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255,145,77);
-    font-size: 1.5rem;
+    padding: 15px;
+    font-size: 10px;
 }
+
+header button {
+    font-size: 20px;
+    font-family:"Barlow";
+    border: none;
+    padding: 10px 36px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(255,189,89);
+    color: white;
+}
+
 
 main {
     display: grid;
@@ -26,15 +41,31 @@ main {
     justify-content: space-between;
     gap: 5px;
 }
+
 main section {
     display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(px, 1fr));
     padding: 15px;
     justify-content: space-between;
     min-height: 33vh;
     border: 1px solid rgb(255,145,77);
     margin: 10px;
     border-radius: 10px;
+    font-family:"Barlow";
+}
+
+/* necessario fazer manutenção para corrigir borda vazando */
+
+main div {
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family:"Barlow";
 }
 
 header img {
@@ -51,17 +82,27 @@ footer {
     justify-content: space-between;
 }
 
-.sobre a{
+.sobre a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+
+    color: rgb(245, 245, 245, 0.788);   
+}
+
     color: rgb(245, 245, 245, 0.788);
     background-color: black;
 
-    
+
+.redesSociais a {
+    text-decoration: none;
 }
 
 .redesSociais img{
+
+    height: 30px ;
+    width: 30px;    
+
     height: 36px ;
     width: 36px;      
 
@@ -115,4 +156,5 @@ footer {
 .suporte{
     display: flex;
     align-items: center;
+
 }
