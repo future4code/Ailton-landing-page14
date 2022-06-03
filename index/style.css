@@ -91,7 +91,7 @@ main section {
     display: grid;
     padding: 15px;
     justify-content: space-between;
-    min-height: 33vh;
+    min-height: 90vh;
     border: 1px solid rgb(255, 145, 77);
     margin: 10px;
     border-radius: 10px;
@@ -100,6 +100,7 @@ main section {
 
 .about-us h2 {
     display: flex;
+}
 
 .about-us {
     display: flex;
@@ -139,13 +140,10 @@ footer {
 }
 
 .redesSociais img {
-
     height: 30px;
     width: 30px;
-
     height: 36px;
     width: 36px;
-
 }
 
 .secao1 {
@@ -163,7 +161,6 @@ footer {
     font-size: x-large;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
     color: white;
 }
 
@@ -207,6 +204,7 @@ footer {
     display: flex;
     background-color:#ffb700;
     justify-content: space-between;
+    min-height: 20vw;
 }
 
 .textos{
@@ -218,5 +216,4 @@ footer {
     text-align: center;
     padding-right: 10px;
     font-size: larger;
-    
 }
