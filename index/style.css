@@ -101,10 +101,6 @@ main section {
 .about-us h2 {
     display: flex;
 
-    justify-content;
-    margin-right: 5%;
-}
-
 .about-us {
     display: flex;
     flex-direction: row;
@@ -167,7 +163,7 @@ footer {
     font-size: x-large;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    
     color: white;
 }
 
@@ -200,5 +196,27 @@ footer {
 .suporte {
     display: flex;
     align-items: center;
+}
 
+.emprestimo img{
+    width: 30vw;
+
+}
+
+.emprestimo{
+    display: flex;
+    background-color:#ffb700;
+    justify-content: space-between;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 10px;
+    font-size: larger;
+    
 }
