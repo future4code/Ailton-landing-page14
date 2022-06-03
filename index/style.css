@@ -19,14 +19,14 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 145, 77);
-    padding: 15px;
+   :
     font-size: 10px;
     width: 100vw;
 }
 
 
 header img {
-    height: 100px;
+    height: 120px;
 }
 
 ul a {
@@ -79,9 +79,9 @@ header button:hover {
 
 main {
     display: grid;
-    padding: 15px;
+    /* padding: 15px; */
     justify-content: space-between;
-    gap: 5px;
+    /* gap: 5px; */
     width: 100%;
 }
 
@@ -95,9 +95,9 @@ main section {
     padding: 15px;
     justify-content: space-between;
     min-height: 90vh;
-    border: 1px solid rgb(255, 145, 77);
-    margin: 10px;
-    border-radius: 10px;
+    /* border: 1px solid rgb(255, 145, 77); */
+    /* margin: 10px; */
+    /* border-radius: 10px; */
     font-family: "Barlow";
 }
 
@@ -108,26 +108,11 @@ main section {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     font-family: "Barlow";
 }
 
-#integrantes-img1 img {
-    height: 100vh;
-    background-size: cover;
-    background-position: 100%;
-}
-#integrantes-img2 img {
-    height: 100vh;
-    background-size: cover;
-    background-position: 100%;
-}
-#integrantes-img1 {
-    height: 100vh;
-    background-size: cover;
-    background-position: 100%;
-}
 
 footer {
     display: flex;
@@ -145,7 +130,6 @@ footer {
     text-decoration: none;
     color: rgb(245, 245, 245, 0.788);
 }
-
 
 
 
@@ -171,12 +155,11 @@ footer {
     display: flex;
 }
 
-.secao1 p {
-    font-size: large;
+.secao1 h1 {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    color: rgb(0, 0, 0);
+    font-size: 35px;
+    color: whitesmoke;
     padding-top: 10%;
     text-align: center;
 
@@ -209,6 +192,13 @@ footer {
 
 }
 
+.secao2 {
+    min-height: 50vh;
+}
+.secao2 p {
+    font-size: 20px;
+    color: whitesmoke;
+}
 
 .suporte {
     display: flex;
@@ -216,15 +206,28 @@ footer {
 }
 
 .emprestimo img {
-    width: 30vw;
+  height: 33vh;
 
 }
 
+.emprestimo button {
+    font-size: 20px;
+    font-family: "Barlow";
+    border: none;
+    padding: 10px 36px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(255, 189, 89);
+    color: white;
+    font-weight: bold;
+}
+
 .emprestimo {
+    min-height: 33vh;
     display: flex;
-    background-color: #ffb700;
+    background-color: rgb(255, 145, 77);
     justify-content: space-between;
-  
+    
 }
 
 .textos {
@@ -234,5 +237,7 @@ footer {
     justify-content: space-between;
     text-align: center;
     padding: 15px;
-    font-size: larger; 
-    
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}   
