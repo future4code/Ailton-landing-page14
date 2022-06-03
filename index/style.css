@@ -9,9 +9,8 @@
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    min-width: 100vw;
+    /* justify-content: space-between; */
+
 }
 
 header {
@@ -19,9 +18,8 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 145, 77);
-   :
     font-size: 10px;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -49,7 +47,7 @@ li:hover {
 
 button {
     padding: 5px 10px;
-    margin-right: 20px;
+
 }
 
 .emprestimo img {
@@ -80,6 +78,7 @@ header button:hover {
 main {
     display: grid;
     /* padding: 15px; */
+    grid-template-columns: 100%;
     justify-content: space-between;
     /* gap: 5px; */
     width: 100%;
@@ -94,7 +93,7 @@ main section {
     display: grid;
     padding: 15px;
     justify-content: space-between;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     /* border: 1px solid rgb(255, 145, 77); */
     /* margin: 10px; */
     /* border-radius: 10px; */
@@ -109,20 +108,11 @@ main section {
     justify-items: center;
     align-items: center;
     /* border: 1px solid black; */
-    border-radius: 10px;
     font-family: "Barlow";
 }
 
 
-footer {
-    display: flex;
-    background-color: rgb(77, 76, 76);
-    color: rgba(245, 245, 245, 0.788);
-    padding: 15px;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 100vw;
-}
+
 
 .sobre a {
     display: flex;
@@ -148,8 +138,9 @@ footer {
     background-image: url(./img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    height: 40vw;
+    background-position: bottom;
+    height: 650px;
+
     justify-content: center;
     align-content: center;
     display: flex;
@@ -193,7 +184,7 @@ footer {
 }
 
 .secao2 {
-    min-height: 50vh;
+    height: 50vh;
 }
 .secao2 p {
     font-size: 20px;
@@ -216,28 +207,90 @@ footer {
     border: none;
     padding: 10px 36px;
     border-radius: 20px;
-    margin: 15px;
+    /* margin: 15px; */
     background-color: rgb(255, 189, 89);
     color: white;
     font-weight: bold;
 }
 
 .emprestimo {
-    min-height: 33vh;
+    /* flex-direction: column; */
+    height: min-content;
     display: flex;
     background-color: rgb(255, 145, 77);
-    justify-content: space-between;
-    
+
 }
 
 .textos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: center;
     padding: 15px;
     color: whitesmoke;
     font-weight: bold;
     font-size: 20px;
 }   
+
+footer {
+    display: flex;
+    background-color: rgb(77, 76, 76);
+    color: rgba(245, 245, 245, 0.788);
+    /* padding: 15px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+@media screen and (max-width : 480px)  {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .emprestimo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+     .emprestimo button {
+         margin-top: 2vh;
+         font-size: 15px;
+     }
+     .emprestimo img {
+         width: 100vw;
+     }
+     #servicos {
+         display: flex;
+         flex-direction: column;
+     }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+    .emprestimo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .emprestimo img {
+        height: 253px;
+        width: 500px;
+    }
+
+    .emprestimo button {
+       margin-top: 2vh;
+       font-size: 18px;
+   }
+
+}
+
+@media screen and (min-device-width : 801px) {
+    .emprestimo button {
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+    }
+    
