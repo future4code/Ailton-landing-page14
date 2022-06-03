@@ -21,7 +21,9 @@ header {
     background-color: rgb(255, 145, 77);
     padding: 15px;
     font-size: 10px;
+    width: 100vw;
 }
+
 
 header img {
     height: 100px;
@@ -50,7 +52,7 @@ button {
     margin-right: 20px;
 }
 
-img {
+.emprestimo img {
     margin-left: 20px;
 }
 
@@ -80,6 +82,7 @@ main {
     padding: 15px;
     justify-content: space-between;
     gap: 5px;
+    width: 100%;
 }
 
 .secao2 div {
@@ -158,26 +161,32 @@ footer {
 }
 
 .secao1 {
-    background-image: url(./img/juventude_pixabay.webp);
+    background-image: url(./img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 40vw;
-    height: 40vw;
     justify-content: center;
     align-content: center;
+    display: flex;
 }
 
 .secao1 p {
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+
+    color: rgb(0, 0, 0);
+    padding-top: 10%;
+    text-align: center;
+
 }
 
 .secao2 {
     display: flex;
     padding: 50px;
+    background-color: #ffb700;
+    font-weight: bold;
 
 }
 
@@ -215,16 +224,15 @@ footer {
     display: flex;
     background-color: #ffb700;
     justify-content: space-between;
-    min-height: 20vw;
+  
 }
 
 .textos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding-right: 10px;
-    font-size: larger;
-}
+    padding: 15px;
+    font-size: larger; 
+    
