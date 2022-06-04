@@ -9,7 +9,6 @@
 #container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 
 }
 
@@ -50,10 +49,6 @@ button {
 
 }
 
-.emprestimo img {
-    margin-left: 20px;
-}
-
 header button {
     font-size: 20px;
     font-family: "Barlow";
@@ -74,13 +69,10 @@ header button:hover {
     color: rgb(255, 145, 77);
 }
 
-
 main {
     display: grid;
-    /* padding: 15px; */
     grid-template-columns: 100%;
     justify-content: space-between;
-    /* gap: 5px; */
     width: 100%;
 }
 
@@ -93,10 +85,7 @@ main section {
     display: grid;
     padding: 15px;
     justify-content: space-between;
-    /* min-height: 90vh; */
-    /* border: 1px solid rgb(255, 145, 77); */
-    /* margin: 10px; */
-    /* border-radius: 10px; */
+
     font-family: "Barlow";
 }
 
@@ -107,11 +96,8 @@ main section {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    /* border: 1px solid black; */
     font-family: "Barlow";
 }
-
-
 
 
 .sobre a {
@@ -140,7 +126,6 @@ main section {
     background-size: cover;
     background-position: bottom;
     height: 650px;
-
     justify-content: center;
     align-content: center;
     display: flex;
@@ -186,6 +171,7 @@ main section {
 .secao2 {
     height: 50vh;
 }
+
 .secao2 p {
     font-size: 20px;
     color: whitesmoke;
@@ -197,7 +183,7 @@ main section {
 }
 
 .emprestimo img {
-  height: 33vh;
+    height: 33vh;
 
 }
 
@@ -207,14 +193,12 @@ main section {
     border: none;
     padding: 10px 36px;
     border-radius: 20px;
-    /* margin: 15px; */
     background-color: rgb(255, 189, 89);
     color: white;
     font-weight: bold;
 }
 
 .emprestimo {
-    /* flex-direction: column; */
     height: min-content;
     display: flex;
     background-color: rgb(255, 145, 77);
@@ -225,25 +209,23 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     text-align: center;
     padding: 15px;
     color: whitesmoke;
     font-weight: bold;
     font-size: 20px;
-}   
+}
 
 footer {
     display: flex;
     background-color: rgb(77, 76, 76);
     color: rgba(245, 245, 245, 0.788);
-    /* padding: 15px; */
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
 }
 
-@media screen and (max-width : 480px)  {
+@media screen and (max-width : 480px) {
     header {
         display: flex;
         flex-direction: column;
@@ -256,17 +238,19 @@ footer {
         gap: 5px;
     }
 
-     .emprestimo button {
-         margin-top: 2vh;
-         font-size: 15px;
-     }
-     .emprestimo img {
-         width: 100vw;
-     }
-     #servicos {
-         display: flex;
-         flex-direction: column;
-     }
+    .emprestimo button {
+        margin-top: 2vh;
+        font-size: 15px;
+    }
+
+    .emprestimo img {
+        width: 100%;
+    }
+
+    #servicos {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width : 481px) and (max-width : 800px) {
@@ -281,9 +265,9 @@ footer {
     }
 
     .emprestimo button {
-       margin-top: 2vh;
-       font-size: 18px;
-   }
+        margin-top: 2vh;
+        font-size: 18px;
+    }
 
 }
 
@@ -292,5 +276,4 @@ footer {
         margin-top: 2vh;
         font-size: 18px;
     }
-    }
-    
+}
