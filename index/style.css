@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inconsolata:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 145, 77);
+    font-size: 10px;
+    width: 100%;
+}
+
+
+header img {
+    height: 120px;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding: 0 9px;
+    font-size: 20px;
+
+}
+
+li:hover {
+    color: rgb(255, 210, 86);
+
+}
+
+button {
+    padding: 5px 10px;
+
+}
+
+header button {
+    font-size: 20px;
+    font-family: "Barlow";
+    border: none;
+    padding: 10px 36px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(255, 189, 89);
+    color: white;
+}
+
+header button:hover {
+    font-size: 24px;
+    font-family: "Barlow";
+    padding: 16px 40px;
+    border-radius: 28px;
+    background-color: whitesmoke;
+    color: rgb(255, 145, 77);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.secao2 div {
+    border: none;
+    justify-content: space-between;
+}
+
+main section {
+    display: grid;
+    padding: 15px;
+    justify-content: space-between;
+
+    font-family: "Barlow";
+}
+
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    font-family: "Barlow";
+}
+
+
+.sobre a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(245, 245, 245, 0.788);
+}
+
+
+
+.redesSociais a {
+    text-decoration: none;
+}
+
+.redesSociais img {
+    height: 30px;
+    width: 30px;
+    height: 36px;
+    width: 36px;
+}
+
+.secao1 {
+    background-image: url(./img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 650px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+.secao1 h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: whitesmoke;
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.secao2 {
+    display: flex;
+    padding: 50px;
+    background-color: #ffb700;
+    font-weight: bold;
+
+}
+
+.secao2 img {
+    width: 10vw;
+    height: 10vw;
+}
+
+
+.cartao {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.contaCorrente {
+    display: flex;
+    align-items: center;
+
+}
+
+.secao2 {
+    height: 50vh;
+}
+
+.secao2 p {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.suporte {
+    display: flex;
+    align-items: center;
+}
+
+.emprestimo img {
+    height: 33vh;
+
+}
+
+.emprestimo button {
+    font-size: 20px;
+    font-family: "Barlow";
+    border: none;
+    padding: 10px 36px;
+    border-radius: 20px;
+    background-color: rgb(255, 189, 89);
+    color: white;
+    font-weight: bold;
+}
+
+.emprestimo {
+    height: min-content;
+    display: flex;
+    background-color: rgb(255, 145, 77);
+
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(77, 76, 76);
+    color: rgba(245, 245, 245, 0.788);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+@media screen and (max-width : 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .emprestimo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .emprestimo button {
+        margin-top: 2vh;
+        font-size: 15px;
+    }
+
+    .emprestimo img {
+        width: 100%;
+    }
+
+    #servicos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+    .emprestimo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .emprestimo img {
+        height: 253px;
+        width: 500px;
+    }
+
+    .emprestimo button {
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-device-width : 801px) {
+    .emprestimo button {
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+}
